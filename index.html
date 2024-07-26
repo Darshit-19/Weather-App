@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <form action="#" aria-labelledby="weather-form">
+            <label for="city-name">City Name:</label>
+            <input id="city-name" type="text" placeholder="Enter your city name" aria-required="true">
+            <input type="submit" value="Get Weather">
+        </form>
+        <div class="loading" style="display:none;">Loading...</div>
+        <div class="error" style="display:none;">An error occurred. Please try again.</div>
+        <div class="weather-data">
+            <div class="icon"></div>
+            <div class="temp"></div>
+            <div class="desc"></div>
+            <div class="details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
